@@ -54,7 +54,7 @@ let task_delete_get = (req, res) => {
   taskModel.getEachTask(id, (result) => {
     console.log(result);
 
-    res.render("pages/delete", { tasks: result });
+    res.render("pages/delete", { task: result });
   });
 };
 
