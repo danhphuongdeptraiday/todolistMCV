@@ -17,7 +17,7 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-  res.send("Hello");
+  res.redirect("/home");
 });
 
 app.use(takeRoutes);
