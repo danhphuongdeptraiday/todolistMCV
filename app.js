@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(takeRoutes);
-
-app.listen(PORT, () => {
-  console.log(`Listening at ${PORT}`.cyan);
+let port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Listening at ${port}`.cyan);
 });
